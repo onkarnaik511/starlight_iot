@@ -1,0 +1,34 @@
+This is the paho C library for MQTT publish and Subscribe
+
+Clone Paho Library for MQTT
+git clone https://github.com/eclipse/paho.mqtt.c.git
+
+Install requirements and build the library.
+Dependencies
+  apt-get install build-essential gcc make cmake cmake-gui cmake-curses-gui
+  apt-get install fakeroot fakeroot devscripts dh-make lsb-release
+  apt-get install libssl-dev
+
+Installation
+  make
+  sudo make install
+
+Example Codes present in /paho.mqtt.c/src/samples/ folder
+
+To compile 
+  gcc file.c -o file -lpaho-mqtt3c
+
+To use GPIO use wiring Pi library for Raspberry Pi: 
+wiringPiSetup();
+pinMode(ledPin,OUTPUT);
+digitalWrite(ledPin, HIGH) / digitalWrite(ledPin, LOW)
+value = digitalRead(ledPin)
+pwmWrite(ledPin, brightnessValue);
+
+compiling using wiring pi 
+  gcc file_name.c -o obj_file_name -lwiringPi
+
+To run
+./obj_file_name 
+
+

@@ -1,0 +1,19 @@
+Use python_paho library
+
+install
+  pip install paho-mqtt
+
+full source including examples and tests
+  git clone https://github.com/eclipse/paho.mqtt.python
+
+build from source
+  cd paho.mqtt.python
+  python setup.py install
+
+example in python
+  Create a client instance Client(client_id="", clean_session=True, userdata=None, protocol=MQTTv311, transport="tcp")
+  Connect to a broker using one of the connect*() functions
+  Call one of the loop*() functions to maintain network traffic flow with the broker
+  Use subscribe() to subscribe to a topic and receive messages
+  Use publish() to publish messages to the broker
+  Use disconnect() to disconnect from the broker
