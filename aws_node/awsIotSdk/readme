@@ -1,0 +1,16 @@
+publish data to aws 
+
+create a thing
+
+create certificates and download them
+
+in the main folder install the sdk "npm install aws-sdk". 
+check node modules folder if already present.
+
+copy certificates to the main folder
+
+give the path of the certificates in index.js
+
+give client id and broker end point in index.js
+
+run program using "node index.js"
